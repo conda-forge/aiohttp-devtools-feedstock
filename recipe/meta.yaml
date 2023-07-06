@@ -19,15 +19,15 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - aiohttp >=3.8.0
     - click >=6.6
-    - python-devtools >=0.5
+    - python-devtools >=0.6
     - pygments >=2.2.0
-    - watchgod >=0.2
+    - watchfiles >=0.10
 
 test:
   imports:
