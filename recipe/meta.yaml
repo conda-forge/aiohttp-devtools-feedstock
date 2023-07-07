@@ -1,5 +1,5 @@
 {% set name = "aiohttp-devtools" %}
-{% set version = "1.0.post0" %}
+{% set version = "1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aiohttp-devtools-{{ version }}.tar.gz
-  sha256: f46a87b250a84bf8edca21c8b6991dc2b6145cdf0af8a08b73f5c92d48d85f01
+  sha256: e84f072a843aeb655e614e937d1fcf7bef8d9155b3cbaee35a0f30d192ed055e
 
 build:
   entry_points:
@@ -19,15 +19,15 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - aiohttp >=3.8.0
     - click >=6.6
-    - python-devtools >=0.5
+    - python-devtools >=0.6
     - pygments >=2.2.0
-    - watchgod >=0.2
+    - watchfiles >=0.10
 
 test:
   imports:
